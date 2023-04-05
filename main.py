@@ -13,8 +13,8 @@ if __name__ == "__main__":
     # import multiprocessing
     # multiprocessing.set_start_method("spawn")
 
-    # from core.leras import nn
-    # nn.initialize_main_env()
+    from core.leras import nn
+    nn.initialize_main_env()
 
     exit_code = 0
 
@@ -62,8 +62,8 @@ if __name__ == "__main__":
         silent_start=True, # Silent start. Automatically chooses Best GPU and last used model.
         sort_by_method=None, # Method of sorting. 'origname' sort by original filename to recover original sequence.
         to_time=None, # To time, for example 00:00:00.000
-        training_data_dst_dir='workspace_small/data_dst/aligned', # Dir of extracted DST faceset.
-        training_data_src_dir='workspace_small/data_src/aligned', # Dir of extracted SRC faceset.
+        training_data_dst_dir='workspace/data_dst/aligned', # Dir of extracted DST faceset.
+        training_data_src_dir='workspace/data_src/aligned', # Dir of extracted SRC faceset.
 
 
         unpack_faceset=False, # Unpack faceset.
